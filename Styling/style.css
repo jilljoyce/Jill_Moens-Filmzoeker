@@ -1,0 +1,63 @@
+html {
+  background-color: black;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 12fr 1fr;
+      grid-template-columns: 1fr 12fr 1fr;
+  -ms-grid-rows: 125px auto;
+      grid-template-rows: 125px auto;
+      grid-template-areas: ". header ." ". main .";
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: header;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.header__h1 {
+  padding-top: 20px;
+}
+
+.header label {
+  padding: 15px 15px 15px 5px;
+}
+
+.main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: main;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+#lijst-films {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+#lijst-films li {
+  list-style: none;
+  padding: 5px;
+}
+/*# sourceMappingURL=style.css.map */
